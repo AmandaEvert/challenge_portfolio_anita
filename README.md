@@ -16,4 +16,14 @@ Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym sprawdzić 
 ## Password ##
 //*[@id="password"]
 /html/body/div[1]/form/div/div[1]/div[2]/div/input
-//*[text()="Password"]
+//input[@type="password"]
+## Please provide your username or your e-mail ##
+//*[@id="__next"]/form/div/div[1]/div[3]/span
+//*[contains(@class, "MuiTypography-root MuiTypography-caption")]
+//span[text()="Please provide your username or your e-mail."]
+## Remind Password ##
+//*[@id="__next"]/form/div/div[1]/a
+//*[contains(@class, "MuiTypography-root MuiLink")]
+//*[text()="Remind password"]
+## Language ##
+
