@@ -17,7 +17,7 @@ Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym sprawdzić 
 //*[@id="password"]
 /html/body/div[1]/form/div/div[1]/div[2]/div/input
 //input[@type="password"]
-## please_provide_your_username_or_your_e-mail_xpath ##
+## please_provide_your_username_xpath ##
 //*[@id="__next"]/form/div/div[1]/div[3]/span
 //*[contains(@class, "MuiTypography-root MuiTypography-caption")]
 //span[text()="Please provide your username or your e-mail."]
@@ -33,4 +33,13 @@ Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym sprawdzić 
 //*[@id="__next"]/form/div/div[2]/button/span[1]
 //span[starts-with(@class,'MuiButton-label')]
  //span[contains(@class,'MuiButton-label')] 
- 
+## language_select_button_xpath ##
+//div[@role='button' and contains(@class,'MuiSelect')]
+## language_select_english_xpath ##
+//li[@role='option' and contains(@data-value,'en')]
+## language_select_polski_xpath ##
+//li[@role='option' and contains(@data-value,'pl')]
+## login_label_xpath ##
+ //label[@for='login' and contains(@class,'MuiFormLabel-root')]
+## password_label_xpath ##
+//label[@for='password' and contains(@class,'MuiFormLabel-root')]
