@@ -5,31 +5,31 @@ Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym sprawdzić 
 ## Wynik ##
 9
 # ZADANIE 2: selektory #
-## Scouts_Panel_xpath ##
+## scouts_panel_xpath ##
 //*[@id="__next"]/form/div/div[1]/h5
 //*[contains(@ class, "MuiTypography-root MuiTypography-h5")]
 //*[text()="Scouts Panel"]
-## Login_xpath ##
+## login_xpath ##
 //*[@id="login"]
 //input[@type="text"]
 //input[starts-with(@name,'login')]
-## Password_xpath ##
+## password_xpath ##
 //*[@id="password"]
 /html/body/div[1]/form/div/div[1]/div[2]/div/input
 //input[@type="password"]
-## Please_provide_your_username_or_your_e-mail_xpath ##
+## please_provide_your_username_or_your_e-mail_xpath ##
 //*[@id="__next"]/form/div/div[1]/div[3]/span
 //*[contains(@class, "MuiTypography-root MuiTypography-caption")]
 //span[text()="Please provide your username or your e-mail."]
-## Remind_Password_xpath ##
+## remind_password_xpath ##
 //*[@id="__next"]/form/div/div[1]/a
 //*[contains(@class, "MuiTypography-root MuiLink")]
 //*[text()="Remind password"]
-## Language_xpath ##
+## language_xpath ##
 //*[@id="__next"]/form/div/div[2]/div/div
 //div[starts-with(@class,"MuiSelect-root MuiSelect-select")]
 //div[@role="button" and contains(@class,'MuiSelect')]
-## Sign_in_xpath ##
+## sign_in_xpath ##
 //*[@id="__next"]/form/div/div[2]/button/span[1]
 //span[starts-with(@class,'MuiButton-label')]
  //span[contains(@class,'MuiButton-label')] 
