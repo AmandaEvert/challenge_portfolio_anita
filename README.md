@@ -9,11 +9,11 @@ Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym sprawdzić 
 1. //*[@id="__next"]/form/div/div[1]/h5
 2. //*[contains(@ class, "MuiTypography-root MuiTypography-h5")]
 3. //*[text()="Scouts Panel"]
-## login_xpath ##
+## login_input_xpath ##
 1. //*[@id="login"]
 2. //input[@type="text"]
 3. //input[starts-with(@name,'login')]
-## password_xpath ##
+## password_input_xpath ##
 1. //*[@id="password"]
 2. /html/body/div[1]/form/div/div[1]/div[2]/div/input
 3. //input[@type="password"]
