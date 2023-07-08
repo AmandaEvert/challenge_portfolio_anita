@@ -10,29 +10,29 @@ Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym sprawdzić 
 2. //*[contains(@ class, "MuiTypography-root MuiTypography-h5")]
 3. //*[text()="Scouts Panel"]
 ## login_xpath ##
-//*[@id="login"]
-//input[@type="text"]
-//input[starts-with(@name,'login')]
+1. //*[@id="login"]
+2. //input[@type="text"]
+3. //input[starts-with(@name,'login')]
 ## password_xpath ##
-//*[@id="password"]
-/html/body/div[1]/form/div/div[1]/div[2]/div/input
-//input[@type="password"]
+1. //*[@id="password"]
+2. /html/body/div[1]/form/div/div[1]/div[2]/div/input
+3. //input[@type="password"]
 ## please_provide_your_username_xpath ##
-//*[@id="__next"]/form/div/div[1]/div[3]/span
-//*[contains(@class, "MuiTypography-root MuiTypography-caption")]
-//span[text()="Please provide your username or your e-mail."]
+1. //*[@id="__next"]/form/div/div[1]/div[3]/span
+2. //*[contains(@class, "MuiTypography-root MuiTypography-caption")]
+3. //span[text()="Please provide your username or your e-mail."]
 ## remind_password_xpath ##
-//*[@id="__next"]/form/div/div[1]/a
-//*[contains(@class, "MuiTypography-root MuiLink")]
-//*[text()="Remind password"]
+1. //*[@id="__next"]/form/div/div[1]/a
+2. //*[contains(@class, "MuiTypography-root MuiLink")]
+3. //*[text()="Remind password"]
 ## language_xpath ##
-//*[@id="__next"]/form/div/div[2]/div/div
-//div[starts-with(@class,"MuiSelect-root MuiSelect-select")]
-//div[@role="button" and contains(@class,'MuiSelect')]
+1. //*[@id="__next"]/form/div/div[2]/div/div
+2. //div[starts-with(@class,"MuiSelect-root MuiSelect-select")]
+3. //div[@role="button" and contains(@class,'MuiSelect')]
 ## sign_in_xpath ##
-//*[@id="__next"]/form/div/div[2]/button/span[1]
-//span[starts-with(@class,'MuiButton-label')]
- //span[contains(@class,'MuiButton-label')] 
+1. //*[@id="__next"]/form/div/div[2]/button/span[1]
+2. //span[starts-with(@class,'MuiButton-label')]
+3. //span[contains(@class,'MuiButton-label')] 
 ## language_select_button_xpath ##
 //div[@role='button' and contains(@class,'MuiSelect')]
 ## language_select_english_xpath ##
