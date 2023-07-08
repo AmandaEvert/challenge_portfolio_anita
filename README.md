@@ -6,9 +6,9 @@ Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym sprawdzić 
 9
 # ZADANIE 2: selektory #
 ## scouts_panel_xpath ##
-//*[@id="__next"]/form/div/div[1]/h5
-//*[contains(@ class, "MuiTypography-root MuiTypography-h5")]
-//*[text()="Scouts Panel"]
+1. //*[@id="__next"]/form/div/div[1]/h5
+2. //*[contains(@ class, "MuiTypography-root MuiTypography-h5")]
+3. //*[text()="Scouts Panel"]
 ## login_xpath ##
 //*[@id="login"]
 //input[@type="text"]
