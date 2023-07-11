@@ -20,6 +20,8 @@ class Dashboard(BasePage):
     last_updated_match_button__xpath = "//*/div/div/a[4]/button/span[1]"
     last_updated_report_button_xpath = "//*/div/div/a[5]/button/span[1]"
 
+    def click_on_the_add_a_player_button(self):
+        self.click_on_the_element(self.add_player_button_xpath)
 
     def title_of_page(self):
         time.sleep(4)

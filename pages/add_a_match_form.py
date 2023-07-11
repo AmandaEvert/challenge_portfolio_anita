@@ -1,7 +1,7 @@
 from pages.base_page import BasePage
 
 
-class Add_a_match_form (BasePage)
+class AddaMatchFform (BasePage):
     my_team_field_xpath = "//input[@name='myTeam']"
     enemy_team_field_xpath = "//input[@name='enemyTeam']"
     my_team_score_xpath = "//input[@name= 'myTeamScore']"
@@ -9,7 +9,7 @@ class Add_a_match_form (BasePage)
     date_field_xpath = "//input[@name='date']"
     match_at_home_radiobutton_xpath = "//input[@name='matchAtHome' and contains(@value, 'true')]"
     match_out_home_radiobutton_xpath = "//input[@name='matchAtHome' and contains(@value, 'false')]"
-    t-shirt_color_field_xpath = "//input[@name='tshirt']"
+    t_shirt_color_field_xpath = "//input[@name='tshirt']"
     league_field_xpath = "//input[@name='league']"
     time_played_field_xpath = "//input[starts-with(@name,'timePlayed')] "
     number_field_xpath = "//input[starts-with(@name,'number')] "
