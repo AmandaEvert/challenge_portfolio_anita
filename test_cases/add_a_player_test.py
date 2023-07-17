@@ -1,16 +1,15 @@
 import os
 import unittest
 from selenium import webdriver
-
-from pages.dashboard import Dashboard
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 from selenium.webdriver.chrome.service import Service
 from pages.login_page import LoginPage
 from pages.add_a_player import AddPlayer
+from pages.dashboard import Dashboard
 import time
 
 
-class TestLoginPage(unittest.TestCase):
+class TestAddPlayer(unittest.TestCase):
 
     @classmethod
     def setUp(self):
@@ -32,11 +31,12 @@ class TestLoginPage(unittest.TestCase):
         add_a_player_page = AddPlayer(self.driver)
         add_a_player_page.title_of_page()
         add_a_player_page.type_in_email("anna@gmail.com")
-        add_a_player_page.title_of_page()
         add_a_player_page.type_in_name("Anna")
         add_a_player_page.type_in_surname("Kolorowa")
         add_a_player_page.type_in_age("10.12.2000")
         add_a_player_page.type_in_main_position("555")
+        add_a_player_page.click_on_leg_dropdown()
+        add_a_player_page.click_on_left_leg_dropdown()
         add_a_player_page.click_on_the_submit_button()
         time.sleep(5)
 

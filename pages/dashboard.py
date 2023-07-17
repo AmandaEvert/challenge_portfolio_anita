@@ -17,12 +17,23 @@ class Dashboard(BasePage):
     activity_label_xpath = "//*/div[3]/div[3]/div/div/h2"
     last_created_player_button_xpath = "//*/div[3]/div/div/a[1]/button/span[1]"
     last_created_match_button_xpath = "//*/div/a[3]/button/span[1]"
-    last_updated_match_button__xpath = "//*/div/div/a[4]/button/span[1]"
+    last_updated_match_button_xpath = "//*/div/div/a[4]/button/span[1]"
     last_updated_report_button_xpath = "//*/div/div/a[5]/button/span[1]"
 
     def click_on_the_add_a_player_button(self):
         self.click_on_the_element(self.add_player_button_xpath)
 
     def title_of_page(self):
-        time.sleep(4)
+        self.wait_for_element_to_be_clickable(self.add_player_button_xpath)
         assert self.get_page_title(self.dashboard_url) == self.expected_title
+
+    def click_on_the_last_created_match_button(self):
+        self.click_on_the_element(self.last_created_match_button_xpath)
+
+    def click_on_the_sign_out_button(self):
+        self.wait_for_element_to_be_clickable(self.sign_out_button_xpath)
+        self.click_on_the_element(self.sign_out_button_xpath)
+
+    def click_on_the_last_created_player_button(self):
+        self.wait_for_element_to_be_clickable(self.last_created_player_button_xpath)
+        self.click_on_the_element(self.last_created_player_button_xpath)

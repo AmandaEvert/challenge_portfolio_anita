@@ -12,6 +12,8 @@ class AddPlayer(BasePage):
     main_position_field_xpath = "//*[@name='mainPosition']"
     add_a_player_url = "https://scouts-test.futbolkolektyw.pl/en/players/add"
     expected_title = "Add player"
+    leg_dropdown_xpath = "//*[@id='mui-component-select-leg']"
+    left_leg_dropdown_xpath = "//*[@data-value='left']"
 
     def type_in_email(self, email):
         self.field_send_keys(self.email_field_xpath, email)
@@ -34,4 +36,12 @@ class AddPlayer(BasePage):
     def title_of_page(self):
         time.sleep(4)
         assert self.get_page_title(self.add_a_player_url) == self.expected_title
+
+    def click_on_leg_dropdown(self):
+        self.wait_for_element_to_be_clickable(self.leg_dropdown_xpath)
+        self.click_on_the_element(self.leg_dropdown_xpath)
+
+    def click_on_left_leg_dropdown(self):
+        self.wait_for_element_to_be_clickable(self.left_leg_dropdown_xpath)
+        self.click_on_the_element(self.left_leg_dropdown_xpath)
 
