@@ -1,3 +1,5 @@
+import time
+
 from pages.base_page import BasePage
 
 class LoginPage(BasePage):
@@ -10,6 +12,10 @@ class LoginPage(BasePage):
     expected_header_of_the_box = 'Scouts Panel'
     error_message_xpath = "//*/div/div[1]/div[3]/span"
     expected_error_message = "Identifier or password invalid."
+    language_dropdown_button_xpath = "//div[starts-with(@class,'MuiSelect-root MuiSelect')]"
+    language_english_dropdown_xpath = "//li[contains(@data-value, 'en')]"
+    language_polish_dropdown_xpath = "//li[contains(@data-value, 'pl')]"
+
     def type_in_email(self, email):
         self.field_send_keys(self.login_field_xpath, email)
 
@@ -29,4 +35,15 @@ class LoginPage(BasePage):
 
     def verify_header(self):
         self.assert_element_text(self.driver, self.header_of_box_xpath, self.expected_header_of_the_box)
+
+    def select_language(self, language):
+        self.click_on_the_element(self.language_dropdown_button_xpath)
+        time.sleep(1)
+        if language == "english":
+            self.click_on_the_element(self.language_english_dropdown_xpath)
+        else:
+            self.click_on_the_element(self.language_polish_dropdown_xpath)
+
+
+
 
