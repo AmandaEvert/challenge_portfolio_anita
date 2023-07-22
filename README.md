@@ -44,6 +44,6 @@ Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym sprawdzić 
 ## password_label_xpath ##
 //label[@for='password' and contains(@class,'MuiFormLabel-root')]
 
-# ZADANIE 4:#
+# ZADANIE 4: #
 Link do dysku Google:
 https://drive.google.com/drive/u/1/folders/1WCbZ2_oGuhh6jPSKvBARDb-Qf9lmrcIs
