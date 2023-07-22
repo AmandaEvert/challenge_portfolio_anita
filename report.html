@@ -253,10 +253,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 18-Jul-2023 at 18:09:06 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 22-Jul-2023 at 11:20:40 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Summary</h2>
-    <p>0 tests ran in 0.02 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>0 tests ran in 0.24 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">9 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -266,4 +266,85 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable" col="duration">Duration</th>
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
-          <th colspan="4">No results found. Try to check the filters</th></tr></thead></table></body></html>
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">test_cases/test_add_a_player.py::collect</td>
+          <td class="col-duration"></td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">ImportError while importing test module &#x27;C:\Users\Anita\Documents\GitHub\Challenge_portfolio_anita\test_cases\test_add_a_player.py&#x27;.<br/>Hint: make sure your test modules/packages have valid Python names.<br/>Traceback:<br/>..\..\..\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py:126: in import_module<br/>    return _bootstrap._gcd_import(name[level:], package, level)<br/>test_cases\test_add_a_player.py:4: in &lt;module&gt;<br/>    from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT<br/><span class="error">E   ModuleNotFoundError: No module named &#x27;utils&#x27;</span><br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">test_cases/test_add_a_player_change_leg.py::collect</td>
+          <td class="col-duration"></td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">ImportError while importing test module &#x27;C:\Users\Anita\Documents\GitHub\Challenge_portfolio_anita\test_cases\test_add_a_player_change_leg.py&#x27;.<br/>Hint: make sure your test modules/packages have valid Python names.<br/>Traceback:<br/>..\..\..\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py:126: in import_module<br/>    return _bootstrap._gcd_import(name[level:], package, level)<br/>test_cases\test_add_a_player_change_leg.py:4: in &lt;module&gt;<br/>    from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT<br/><span class="error">E   ModuleNotFoundError: No module named &#x27;utils&#x27;</span><br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">test_cases/test_add_match_to_last_created_player.py::collect</td>
+          <td class="col-duration"></td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">ImportError while importing test module &#x27;C:\Users\Anita\Documents\GitHub\Challenge_portfolio_anita\test_cases\test_add_match_to_last_created_player.py&#x27;.<br/>Hint: make sure your test modules/packages have valid Python names.<br/>Traceback:<br/>..\..\..\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py:126: in import_module<br/>    return _bootstrap._gcd_import(name[level:], package, level)<br/>test_cases\test_add_match_to_last_created_player.py:4: in &lt;module&gt;<br/>    from pages.dashboard import Dashboard<br/><span class="error">E   ModuleNotFoundError: No module named &#x27;pages&#x27;</span><br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">test_cases/test_change_language.py::collect</td>
+          <td class="col-duration"></td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">ImportError while importing test module &#x27;C:\Users\Anita\Documents\GitHub\Challenge_portfolio_anita\test_cases\test_change_language.py&#x27;.<br/>Hint: make sure your test modules/packages have valid Python names.<br/>Traceback:<br/>..\..\..\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py:126: in import_module<br/>    return _bootstrap._gcd_import(name[level:], package, level)<br/>test_cases\test_change_language.py:4: in &lt;module&gt;<br/>    from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT<br/><span class="error">E   ModuleNotFoundError: No module named &#x27;utils&#x27;</span><br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">test_cases/test_edit_match_player.py::collect</td>
+          <td class="col-duration"></td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">ImportError while importing test module &#x27;C:\Users\Anita\Documents\GitHub\Challenge_portfolio_anita\test_cases\test_edit_match_player.py&#x27;.<br/>Hint: make sure your test modules/packages have valid Python names.<br/>Traceback:<br/>..\..\..\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py:126: in import_module<br/>    return _bootstrap._gcd_import(name[level:], package, level)<br/>test_cases\test_edit_match_player.py:5: in &lt;module&gt;<br/>    from pages.dashboard import Dashboard<br/><span class="error">E   ModuleNotFoundError: No module named &#x27;pages&#x27;</span><br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">test_cases/test_framework.py::collect</td>
+          <td class="col-duration"></td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">ImportError while importing test module &#x27;C:\Users\Anita\Documents\GitHub\Challenge_portfolio_anita\test_cases\test_framework.py&#x27;.<br/>Hint: make sure your test modules/packages have valid Python names.<br/>Traceback:<br/>..\..\..\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py:126: in import_module<br/>    return _bootstrap._gcd_import(name[level:], package, level)<br/>test_cases\test_framework.py:4: in &lt;module&gt;<br/>    from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT<br/><span class="error">E   ModuleNotFoundError: No module named &#x27;utils&#x27;</span><br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">test_cases/test_invalid_login_to_the_system.py::collect</td>
+          <td class="col-duration"></td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">ImportError while importing test module &#x27;C:\Users\Anita\Documents\GitHub\Challenge_portfolio_anita\test_cases\test_invalid_login_to_the_system.py&#x27;.<br/>Hint: make sure your test modules/packages have valid Python names.<br/>Traceback:<br/>..\..\..\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py:126: in import_module<br/>    return _bootstrap._gcd_import(name[level:], package, level)<br/>test_cases\test_invalid_login_to_the_system.py:4: in &lt;module&gt;<br/>    from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT<br/><span class="error">E   ModuleNotFoundError: No module named &#x27;utils&#x27;</span><br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">test_cases/test_login_to_the_system.py::collect</td>
+          <td class="col-duration"></td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">ImportError while importing test module &#x27;C:\Users\Anita\Documents\GitHub\Challenge_portfolio_anita\test_cases\test_login_to_the_system.py&#x27;.<br/>Hint: make sure your test modules/packages have valid Python names.<br/>Traceback:<br/>..\..\..\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py:126: in import_module<br/>    return _bootstrap._gcd_import(name[level:], package, level)<br/>test_cases\test_login_to_the_system.py:4: in &lt;module&gt;<br/>    from pages.dashboard import Dashboard<br/><span class="error">E   ModuleNotFoundError: No module named &#x27;pages&#x27;</span><br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">test_cases/test_sign_out.py::collect</td>
+          <td class="col-duration"></td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">ImportError while importing test module &#x27;C:\Users\Anita\Documents\GitHub\Challenge_portfolio_anita\test_cases\test_sign_out.py&#x27;.<br/>Hint: make sure your test modules/packages have valid Python names.<br/>Traceback:<br/>..\..\..\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py:126: in import_module<br/>    return _bootstrap._gcd_import(name[level:], package, level)<br/>test_cases\test_sign_out.py:4: in &lt;module&gt;<br/>    from pages.dashboard import Dashboard<br/><span class="error">E   ModuleNotFoundError: No module named &#x27;pages&#x27;</span><br/></div></td></tr></tbody></table></body></html>

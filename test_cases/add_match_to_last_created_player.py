@@ -1,7 +1,6 @@
 import os
 import unittest
 from selenium import webdriver
-
 from pages.dashboard import Dashboard
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 from selenium.webdriver.chrome.service import Service

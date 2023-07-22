@@ -4,6 +4,7 @@ from selenium import webdriver
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 from selenium.webdriver.chrome.service import Service
 from pages.login_page import LoginPage
+from PIL import Image
 
 
 
@@ -24,8 +25,9 @@ class TestInvalidLoginPage(unittest.TestCase):
         user_login.type_in_password('Test4321')
         user_login.click_on_the_sign_in_button()
         user_login.error_info_visible()
-        self.driver.save_screenshot("C:\Users\Anita\Documents\GitHub\Challenge_portfolio_anita\test_cases\Screenshots\invalid_login_to_the_system\TC1.png")
-
+        self.driver.save_screenshot(r"C:\Users\Anita\Documents\GitHub\Challenge_portfolio_anita\test_cases\Screenshots\invalid_login_to_the_system\TC1.png")
+        img = Image.open(r"C:\Users\Anita\Documents\GitHub\Challenge_portfolio_anita\test_cases\Screenshots\invalid_login_to_the_system\TC1.png")
+        img.show()
 
     @classmethod
     def tearDown(self):

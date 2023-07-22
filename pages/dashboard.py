@@ -1,5 +1,4 @@
 from pages.base_page import BasePage
-import time
 
 
 class Dashboard(BasePage):

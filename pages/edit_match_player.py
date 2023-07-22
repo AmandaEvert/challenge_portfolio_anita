@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from pages.base_page import BasePage
-import time
+
 
 class EditMatchPlayer(BasePage):
     my_team_field_xpath = "//input[@name='myTeam']"
