@@ -18,6 +18,7 @@ class Dashboard(BasePage):
     last_created_match_button_xpath = "//*/div/a[3]/button/span[1]"
     last_updated_match_button_xpath = "//*/div/div/a[4]/button/span[1]"
     last_updated_report_button_xpath = "//*/div/div/a[5]/button/span[1]"
+    expected_last_created_player = "ANNA KOLOROWA"
 
     def click_on_the_add_a_player_button(self):
         self.click_on_the_element(self.add_player_button_xpath)
@@ -36,3 +37,8 @@ class Dashboard(BasePage):
     def click_on_the_last_created_player_button(self):
         self.wait_for_element_to_be_clickable(self.last_created_player_button_xpath)
         self.click_on_the_element(self.last_created_player_button_xpath)
+
+    def verify_last_added_player(self):
+        self.wait_for_element_to_be_clickable(self.last_created_player_button_xpath)
+        self.assert_element_text(self.driver, self.last_created_player_button_xpath, self.expected_last_created_player)
+        self.wait_for_element_to_be_clickable(self.last_created_player_button_xpath)

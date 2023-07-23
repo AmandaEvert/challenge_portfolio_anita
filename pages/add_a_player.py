@@ -15,6 +15,7 @@ class AddPlayer(BasePage):
     leg_dropdown_xpath = "//*[@id='mui-component-select-leg']"
     left_leg_dropdown_xpath = "//*[@data-value='left']"
     right_leg_dropdown_xpath = "//li[contains(@data-value, 'right')]"
+    main_page_button_xpath = "//*/div/div/div/ul[1]/div[1]"
 
     def type_in_email(self, email):
         self.field_send_keys(self.email_field_xpath, email)
@@ -46,12 +47,10 @@ class AddPlayer(BasePage):
         self.wait_for_element_to_be_clickable(self.left_leg_dropdown_xpath)
         self.click_on_the_element(self.left_leg_dropdown_xpath)
 
-    def select_leg(self, leg):
-        self.click_on_the_element(self.leg_dropdown_xpath)
-        time.sleep(1)
-        if leg == "Right leg":
-            self.click_on_the_element(self.right_leg_dropdown_xpath)
-        else:
-            self.click_on_the_element(self.left_leg_dropdown_xpath)
+    def click_on_the_main_page_button(self):
+        self.wait_for_element_to_be_clickable(self.main_page_button_xpath)
+        self.click_on_the_element(self.main_page_button_xpath)
+
+
 
 

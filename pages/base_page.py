@@ -35,19 +35,14 @@ class BasePage():
         assert expected_text == element_text
 
     def wait_for_element_to_be_clickable(self, locator, locator_type=DEFAULT_LOCATOR_TYPE):
-        wait = WebDriverWait(self.driver, 5 )
-        element = wait.until(EC.element_to_be_clickable((locator_type, locator)))
+        wait = WebDriverWait(self.driver, 10 )
+        wait.until(EC.element_to_be_clickable((locator_type, locator)))
         time.sleep(3)
 
-    def wait_for_visibility_of_element(self, locator):
+    def wait_for_visibility_of_element(self, locator, locator_type=DEFAULT_LOCATOR_TYPE):
         wait = WebDriverWait(self.driver, 5)
-        element = wait.until(EC.visibility_of_element_located(locator))
+        element = wait.until(EC.visibility_of_element_located((locator_type, locator)))
         return element
-
-    def clear_input_field(self, selector, locator_type=By.XPATH):
-        input_field = self.driver.find_element(locator_type, selector)
-        input_field.clear()
-
 
 
 

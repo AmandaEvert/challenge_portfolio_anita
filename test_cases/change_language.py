@@ -3,11 +3,11 @@ import unittest
 from selenium import webdriver
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 from selenium.webdriver.chrome.service import Service
-from pages.login_page import LoginPage
-import time
+from pages.login_page_change_language import LoginPageChangeLanguage
 
 
-class TestLoginPage(unittest.TestCase):
+
+class TestLoginPageChangeLanguage(unittest.TestCase):
 
     @classmethod
     def setUp(self):
@@ -19,11 +19,10 @@ class TestLoginPage(unittest.TestCase):
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
     def test_change_language(self):
-        user_login = LoginPage(self.driver)
+        user_login = LoginPageChangeLanguage(self.driver)
         user_login.select_language("english")
-        time.sleep(3)
         user_login.select_language("polski")
-        time.sleep(3)
+
     @classmethod
     def tearDown(self):
         self.driver.quit()

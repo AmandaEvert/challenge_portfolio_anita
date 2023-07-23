@@ -6,7 +6,8 @@ from selenium.webdriver.chrome.service import Service
 from pages.login_page import LoginPage
 from pages.add_a_player import AddPlayer
 from pages.dashboard import Dashboard
-import time
+from PIL import Image
+
 
 
 class TestAddPlayer(unittest.TestCase):
@@ -22,10 +23,10 @@ class TestAddPlayer(unittest.TestCase):
 
     def test_add_a_player(self):
         user_login = LoginPage(self.driver)
-        user_login.title_of_page() #check if the title of the opened page is correct
-        user_login.type_in_email('user09@getnada.com') #enter "user09@getnada.com" in the email field
-        user_login.type_in_password('Test-1234')    #enter "Test-1234" in the password field
-        user_login.click_on_the_sign_in_button()   #click on the sign in button
+        user_login.title_of_page()
+        user_login.type_in_email('user09@getnada.com')
+        user_login.type_in_password('Test-1234')
+        user_login.click_on_the_sign_in_button()
         dashboard_page = Dashboard(self.driver)
         dashboard_page.click_on_the_add_a_player_button()
         add_a_player_page = AddPlayer(self.driver)
@@ -38,7 +39,13 @@ class TestAddPlayer(unittest.TestCase):
         add_a_player_page.click_on_leg_dropdown()
         add_a_player_page.click_on_left_leg_dropdown()
         add_a_player_page.click_on_the_submit_button()
-        time.sleep(5)
+        add_a_player_page.click_on_the_main_page_button()
+        dashboard_page = Dashboard(self.driver)
+        dashboard_page.verify_last_added_player()
+        self.driver.save_screenshot(r"C:\Users\Anita\Documents\GitHub\Challenge_portfolio_anita\test_cases\Screenshots\add_a_player\TC2.png")
+        img = Image.open(r"C:\Users\Anita\Documents\GitHub\Challenge_portfolio_anita\test_cases\Screenshots\add_a_player\TC2.png")
+        img.show()
+
 
     @classmethod
     def tearDown(self):
