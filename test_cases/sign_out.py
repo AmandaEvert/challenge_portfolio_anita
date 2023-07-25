@@ -5,7 +5,7 @@ from pages.dashboard import Dashboard
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 from selenium.webdriver.chrome.service import Service
 from pages.login_page import LoginPage
-import time
+
 
 
 class TestSignOut(unittest.TestCase):
@@ -21,12 +21,14 @@ class TestSignOut(unittest.TestCase):
 
     def test_login_to_the_system(self):
         user_login = LoginPage(self.driver)
-        user_login.type_in_email('user09@getnada.com')  #enter "user09@getnada.com" in the email field
-        user_login.type_in_password('Test-1234')  #enter "Test-1234" in the password field
-        user_login.click_on_the_sign_in_button()  #click on the sign in button
+        user_login.type_in_email('user09@getnada.com')
+        user_login.type_in_password('Test-1234')
+        user_login.click_on_the_sign_in_button()
         dashboard_page = Dashboard(self.driver)
         dashboard_page.click_on_the_sign_out_button()
-        time.sleep(5)
+        user_login = LoginPage(self.driver)
+        user_login.title_of_page()
+
 
     @classmethod
     def tearDown(self):

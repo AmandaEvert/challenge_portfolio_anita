@@ -28,6 +28,7 @@ class LoginPage(BasePage):
     def title_of_page(self):
         self.wait_for_element_to_be_clickable(self.sign_in_button_xpath)
         assert self.get_page_title(self.login_url) == self.expected_title
+        self.wait_for_element_to_be_clickable(self.sign_in_button_xpath)
 
     def error_info_visible(self):
         self.assert_element_text(self.driver, self.error_message_xpath, self.expected_error_message)
