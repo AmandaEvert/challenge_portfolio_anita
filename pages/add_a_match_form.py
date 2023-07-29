@@ -1,7 +1,7 @@
 from pages.base_page import BasePage
 
 
-class AddaMatchFform (BasePage):
+class AddaMatchForm (BasePage):
     my_team_field_xpath = "//input[@name='myTeam']"
     enemy_team_field_xpath = "//input[@name='enemyTeam']"
     my_team_score_xpath = "//input[@name= 'myTeamScore']"

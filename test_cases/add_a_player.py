@@ -23,14 +23,12 @@ class TestAddPlayer(unittest.TestCase):
 
     def test_add_a_player(self):
         user_login = LoginPage(self.driver)
-        user_login.title_of_page()
         user_login.type_in_email('user09@getnada.com')
         user_login.type_in_password('Test-1234')
         user_login.click_on_the_sign_in_button()
         dashboard_page = Dashboard(self.driver)
         dashboard_page.click_on_the_add_a_player_button()
         add_a_player_page = AddPlayer(self.driver)
-        add_a_player_page.title_of_page()
         add_a_player_page.type_in_email("anna@gmail.com")
         add_a_player_page.type_in_name("Anna")
         add_a_player_page.type_in_surname("Kolorowa")

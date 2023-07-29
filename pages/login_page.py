@@ -1,11 +1,10 @@
-import time
 from pages.base_page import BasePage
 
 class LoginPage(BasePage):
     login_field_xpath = "//*[@id='login']"
     password_field_xpath = "//*[@id='password']"
     sign_in_button_xpath = "//span[starts-with(@class,'MuiButton-label')]"
-    login_url = "https://scouts-test.futbolkolektyw.pl/en"
+    login_url = "https://scouts.futbolkolektyw.pl/en/"
     expected_title = "Scouts panel - sign in"
     header_of_box_xpath = "//*/div/div[1]/h5"
     expected_header_of_the_box = 'Scouts Panel'
