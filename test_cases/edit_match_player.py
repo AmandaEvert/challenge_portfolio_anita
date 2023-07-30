@@ -16,7 +16,7 @@ class TestEditMatchPlayer(unittest.TestCase):
         os.chmod(DRIVER_PATH, 755)
         self.driver_service = Service(executable_path=DRIVER_PATH)
         self.driver = webdriver.Chrome(service=self.driver_service)
-        self.driver.get('https://scouts-test.futbolkolektyw.pl/login')
+        self.driver.get('https://dareit.futbolkolektyw.pl/')
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
@@ -31,6 +31,7 @@ class TestEditMatchPlayer(unittest.TestCase):
         edit_match_player_page.clear_enemy_team_field()
         edit_match_player_page.type_in_enemy_team_field('Soki')
         edit_match_player_page.click_on_the_submit_button()
+        edit_match_player_page.click_on_the_main_page_button()
         time.sleep(5)
 
     @classmethod

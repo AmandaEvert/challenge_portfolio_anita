@@ -10,7 +10,7 @@ class AddPlayer(BasePage):
     submit_button_xpath = "//*/div[3]/button[1]/span[1]"
     add_a_player_button_xpath = "//*/div[2]/div/div/a/button/span[1]"
     main_position_field_xpath = "//*[@name='mainPosition']"
-    add_a_player_url = "https://scouts-test.futbolkolektyw.pl/en/players/add"
+    add_a_player_url = "https://dareit.futbolkolektyw.pl/en/players/add"
     expected_title = "Add player"
     leg_dropdown_xpath = "//*[@id='mui-component-select-leg']"
     left_leg_dropdown_xpath = "//*[@data-value='left']"

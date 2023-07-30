@@ -3,11 +3,11 @@ from pages.base_page import BasePage
 
 class Dashboard(BasePage):
     expected_title = "Scouts panel"
-    dashboard_url = "https://scouts-test.futbolkolektyw.pl/"
+    dashboard_url = "https://dareit.futbolkolektyw.pl/en"
     main_page_button_xpath = "//div[@class='MuiListItemText-root jss91 jss105']//child::span"
     players_button_xpath = "//div[@class='MuiListItemText-root jss91 jss106']//child::span"
     language_button_xpath = "//*//div/ul[2]/div[1]"
-    sign_out_button_xpath = "//span[text()='Sign out']"
+    sign_out_button_xpath = "//div/ul[2]/div[2]/div[2]/span"
     scouts_panel_xpath = "//h6[starts-with(@class,'MuiTypography-root jss16')"
     image_futbol_xpath = "//div[@title='Logo Scouts Panel' and contains(@style,'image')]"
     text_under_image_xpath = "//p[starts-with(@class,'MuiTypography-root ')]"
@@ -42,3 +42,5 @@ class Dashboard(BasePage):
         self.wait_for_element_to_be_clickable(self.last_created_player_button_xpath)
         self.assert_element_text(self.driver, self.last_created_player_button_xpath, self.expected_last_created_player)
         self.wait_for_element_to_be_clickable(self.last_created_player_button_xpath)
+
+

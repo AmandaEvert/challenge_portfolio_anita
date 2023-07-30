@@ -12,6 +12,7 @@ class EditMatchPlayer(BasePage):
     match_at_home_radiobutton_xpath = "//input[@name='matchAtHome' and contains(@value, 'true')]"
     match_out_home_radiobutton_xpath = "//input[@name='matchAtHome' and contains(@value, 'false')]"
     submit_button_xpath = "//*/form/div[3]/button[1]/span[1]"
+    main_page_button_xpath ="//div/ul[1]/div[1]/div[2]/span"
 
     def clear_enemy_team_field(self):
         self.wait_for_element_to_be_clickable(self.enemy_team_field_xpath)
@@ -26,6 +27,10 @@ class EditMatchPlayer(BasePage):
     def click_on_the_submit_button(self):
         self.wait_for_element_to_be_clickable(self.submit_button_xpath)
         self.click_on_the_element(self.submit_button_xpath)
+
+    def click_on_the_main_page_button(self):
+        self.wait_for_element_to_be_clickable(self.main_page_button_xpath)
+        self.click_on_the_element(self.main_page_button_xpath)
 
 
 
