@@ -34,6 +34,7 @@ class TestAddPlayer(unittest.TestCase):
         add_a_player_page.type_in_surname("Kolorowa")
         add_a_player_page.type_in_age("10.12.2000")
         add_a_player_page.type_in_main_position("555")
+        add_a_player_page.type_prevclub("Kolonia")
         add_a_player_page.click_on_leg_dropdown()
         add_a_player_page.click_on_left_leg_dropdown()
         add_a_player_page.click_on_the_submit_button()
