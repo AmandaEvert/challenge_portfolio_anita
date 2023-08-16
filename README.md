@@ -1,7 +1,8 @@
 # Task 1   😺	
 ## **Subtask 1: Software Configuration** ##
 ## **Subtask 2: Why did I decide to participate in the Dare IT Challenge?** ##
-Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym sprawdzić czy nadaję się do automatycznego testowania oprogramowania. Jest to dla mnie coś zupełnie nowego (z wykształcenia jestem prawnikiem), więc będzie to dla mnie spore wyzwanie. Mam nadzieję, że ogarnę.  😊
+
+I made the decision to join the challenge because I am eager to broaden my expertise in the realm of software testing. The prospect of exploring automated testing intrigued me, as it presents an opportunity to delve into a new area of expertise. As a legal professional by education, this venture is a departure from my usual path, making it an exciting and substantial endeavor. I am keen to assess whether the realm of automated testing aligns with my skills and interests, and whether I can navigate this unfamiliar terrain effectively. The challenge represents a chance not only to enhance my technical skills but also to uncover whether automated testing could potentially become a fulfilling aspect of my professional journey. 😊
 
 # Task 2: Selectors #
  ## scouts_panel_xpath ##
