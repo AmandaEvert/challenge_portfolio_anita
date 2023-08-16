@@ -3,7 +3,7 @@
 ## **Subtask 2: Why did I decide to participate in the Dare IT Challenge?** ##
 Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym sprawdzić czy nadaję się do automatycznego testowania oprogramowania. Jest to dla mnie coś zupełnie nowego (z wykształcenia jestem prawnikiem), więc będzie to dla mnie spore wyzwanie. Mam nadzieję, że ogarnę.  😊
 
-# Task 2: selektory #
+# Task 2: Selectors #
  ## scouts_panel_xpath ##
 1. //*[@id="__next"]/form/div/div[1]/h5
 2. //*[contains(@ class, "MuiTypography-root MuiTypography-h5")]
