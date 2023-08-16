@@ -4,7 +4,7 @@
 Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym sprawdzić czy nadaję się do automatycznego testowania oprogramowania. Jest to dla mnie coś zupełnie nowego (z wykształcenia jestem prawnikiem), więc będzie to dla mnie spore wyzwanie. Mam nadzieję, że ogarnę.  😊
 
 # Task 2: selektory #
-* ## scouts_panel_xpath ##
+ ## scouts_panel_xpath ##
 1. //*[@id="__next"]/form/div/div[1]/h5
 2. //*[contains(@ class, "MuiTypography-root MuiTypography-h5")]
 3. //*[text()="Scouts Panel"]
@@ -46,3 +46,7 @@ Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym sprawdzić 
 # TASK 4: Test Cases #
 Google Drive link:
 * [Link](https://docs.google.com/spreadsheets/d/1mjeW6s61jgjlURlCBLyJqYggX-w6kDft7rOAZ1p7cPs/edit#gid=0)
+
+# TASK 5: Robot Framework#
+Link to additional repository:
+* [Link](https://github.com/AmandaEvert/panelscout_robotframework)
