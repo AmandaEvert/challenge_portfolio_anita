@@ -52,7 +52,7 @@ Google Drive link:
 Link to additional repository:
 * [Link](https://github.com/AmandaEvert/panelscout_robotframework)
 
-# TASK 6 Bug reporting and test report: #
+# TASK 6: Bug reporting and test report #
 * Bug report: [Link](https://docs.google.com/spreadsheets/d/1f_amZVEE6RzkavfqO55qnJt9pRNOxyRbN8Fkt53hF1w/edit#gid=0)
 * Test report: [Link](https://docs.google.com/spreadsheets/d/1TyrAV53leK3eamTTunXov9XSMufQWMIk7DcutnuT5MI/edit#gid=0)
 * Portfolio: [Link](https://github.com/AmandaEvert/PORTFOLIO)
