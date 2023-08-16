@@ -1,4 +1,4 @@
-# Task 1 #
+# Task 1 # 😺	:smiley_cat:
 ## **Subtask 1: Software Configuration** ##
 ## **Subtask 2: Why did I decide to participate in the Dare IT Challenge?** ##
 Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym sprawdzić czy nadaję się do automatycznego testowania oprogramowania. Jest to dla mnie coś zupełnie nowego (z wykształcenia jestem prawnikiem), więc będzie to dla mnie spore wyzwanie. Mam nadzieję, że ogarnę.  😊
