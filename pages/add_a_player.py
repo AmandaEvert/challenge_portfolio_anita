@@ -33,8 +33,6 @@ class AddPlayer(BasePage):
     def type_in_age(self, age):
         self.field_send_keys(self.age_field_xpath, age)
 
-    def type_prevclub(self, prevclub):
-        self.field_send_keys(self.prevClub_field_xpath, prevclub)
 
     def click_on_the_submit_button(self):
         self.wait_for_element_to_be_clickable(self.submit_button_xpath)
