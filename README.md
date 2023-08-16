@@ -1,11 +1,11 @@
-# Zadanie 1 #
-## **Podzadanie 1: Konfiguracja oprogramowania.** ##
-## **Podzadanie 2: Dlaczego zdecydowałem się wziąć udział w wyzwaniu Dare IT Challenge?** ##
-Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym sprawdzić czy nadaję się do automatycznego testowania oprogramowania. Jest to dla mnie coś zupełnie nowego (z wykształcenia jestem prawnikiem), więc będzie to dla mnie spore wyzwanie. Mam nadzieję, że ogarnę.  😊
-## Wynik ##
-9
-# ZADANIE 2: selektory #
-## scouts_panel_xpath ##
+# Task 1   😺	
+## **Subtask 1: Software Configuration** ##
+## **Subtask 2: Why did I decide to participate in the Dare IT Challenge?** ##
+
+I made the decision to join the challenge because I am eager to broaden my expertise in the realm of software testing. The prospect of exploring automated testing intrigued me, as it presents an opportunity to delve into a new area of expertise. As a legal professional by education, this venture is a departure from my usual path, making it an exciting and substantial endeavor. I am keen to assess whether the realm of automated testing aligns with my skills and interests, and whether I can navigate this unfamiliar terrain effectively. The challenge represents a chance not only to enhance my technical skills but also to uncover whether automated testing could potentially become a fulfilling aspect of my professional journey. 😊
+
+# Task 2: Selectors #
+ ## scouts_panel_xpath ##
 1. //*[@id="__next"]/form/div/div[1]/h5
 2. //*[contains(@ class, "MuiTypography-root MuiTypography-h5")]
 3. //*[text()="Scouts Panel"]
@@ -44,6 +44,15 @@ Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym sprawdzić 
 ## password_label_xpath ##
 //label[@for='password' and contains(@class,'MuiFormLabel-root')]
 
-# ZADANIE 4: #
-Link do dysku Google:
-https://drive.google.com/drive/u/1/folders/1WCbZ2_oGuhh6jPSKvBARDb-Qf9lmrcIs
+# TASK 4: Test Cases #
+Google Drive link:
+* [Link](https://docs.google.com/spreadsheets/d/1mjeW6s61jgjlURlCBLyJqYggX-w6kDft7rOAZ1p7cPs/edit#gid=0)
+
+# TASK 5: Robot Framework #
+Link to additional repository:
+* [Link](https://github.com/AmandaEvert/panelscout_robotframework)
+
+# TASK 6: Bug reporting and test report #
+* Bug report: [Link](https://docs.google.com/spreadsheets/d/1f_amZVEE6RzkavfqO55qnJt9pRNOxyRbN8Fkt53hF1w/edit#gid=0)
+* Test report: [Link](https://docs.google.com/spreadsheets/d/1TyrAV53leK3eamTTunXov9XSMufQWMIk7DcutnuT5MI/edit#gid=0)
+* Portfolio: [Link](https://github.com/AmandaEvert/PORTFOLIO)
