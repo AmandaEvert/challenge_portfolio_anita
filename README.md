@@ -1,10 +1,9 @@
-# Zadanie 1 #
-## **Podzadanie 1: Konfiguracja oprogramowania.** ##
-## **Podzadanie 2: Dlaczego zdecydowałem się wziąć udział w wyzwaniu Dare IT Challenge?** ##
+# Task 1 #
+## **Subtask 1: Konfiguracja oprogramowania.** ##
+## **Subtask 2: Dlaczego zdecydowałem się wziąć udział w wyzwaniu Dare IT Challenge?** ##
 Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym sprawdzić czy nadaję się do automatycznego testowania oprogramowania. Jest to dla mnie coś zupełnie nowego (z wykształcenia jestem prawnikiem), więc będzie to dla mnie spore wyzwanie. Mam nadzieję, że ogarnę.  😊
-## Wynik ##
-9
-# ZADANIE 2: selektory #
+
+# Task 2: selektory #
 ## scouts_panel_xpath ##
 1. //*[@id="__next"]/form/div/div[1]/h5
 2. //*[contains(@ class, "MuiTypography-root MuiTypography-h5")]
@@ -46,4 +45,4 @@ Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym sprawdzić 
 
 # ZADANIE 4: #
 Link do dysku Google:
-https://drive.google.com/drive/u/1/folders/1WCbZ2_oGuhh6jPSKvBARDb-Qf9lmrcIs
+[Link](https://drive.google.com/drive/u/1/folders/1WCbZ2_oGuhh6jPSKvBARDb-Qf9lmrcIs)
