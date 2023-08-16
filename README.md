@@ -1,6 +1,6 @@
 # Task 1 #
-## **Subtask 1: Konfiguracja oprogramowania.** ##
-## **Subtask 2: Dlaczego zdecydowałem się wziąć udział w wyzwaniu Dare IT Challenge?** ##
+## **Subtask 1: Software Configuration** ##
+## **Subtask 2: Why did I decide to participate in the Dare IT Challenge?** ##
 Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym sprawdzić czy nadaję się do automatycznego testowania oprogramowania. Jest to dla mnie coś zupełnie nowego (z wykształcenia jestem prawnikiem), więc będzie to dla mnie spore wyzwanie. Mam nadzieję, że ogarnę.  😊
 
 # Task 2: selektory #
@@ -44,5 +44,5 @@ Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym sprawdzić 
 //label[@for='password' and contains(@class,'MuiFormLabel-root')]
 
 # TASK 4: Test Cases #
-Link do dysku Google:
+Google Drive link:
 * [Link](https://docs.google.com/spreadsheets/d/1mjeW6s61jgjlURlCBLyJqYggX-w6kDft7rOAZ1p7cPs/edit#gid=0)
